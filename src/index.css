@@ -68,14 +68,13 @@
 }
 
 @keyframes breatheCircle {
-  0% { transform: scale(0.85); }
-  45% { transform: scale(1.25); }
-  55% { transform: scale(1.25); }
-  100% { transform: scale(0.85); }
+  0% { transform: scale(0.85); opacity: 0.88; }
+  40% { transform: scale(1.28); opacity: 1; }
+  100% { transform: scale(0.85); opacity: 0.88; }
 }
 
 .breathing-bubble {
-  animation: breatheCircle 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  animation: breatheCircle 10s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 ::-webkit-scrollbar {
